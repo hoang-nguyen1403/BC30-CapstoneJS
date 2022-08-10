@@ -1,0 +1,105 @@
+@import "../base/_base";
+@import "../themes/variable";
+
+
+.detail-product{
+    margin-top: 20px;
+    .left-side{
+        padding-left: 40px;
+        overflow: hidden;
+        .product-illustration{
+            overflow: hidden;
+            background-color: $bg-card-light;
+            .detail-product{
+                width: 100%;
+                padding: 90px 90px 90px 90px;
+                transition: all 1s ease;
+                &:hover{
+                    transform: scale(1.4);
+                }
+            }
+        }
+        
+    }
+    .right-side{
+        margin-top: 20px;
+        margin-left: 60px;
+        .product-name{
+            @include text($dark-text-color, $semiBold, $large);
+        }
+        .product-description{
+        }
+        .des-size{
+            @include text($green-text-color);
+        }
+        .sizes{
+            display: flex;
+            p { 
+                width: 50px;
+                height: 50px;
+                background-color: $bg-size-btn;
+                margin-right: 20px;
+                text-align: center;
+                line-height: 50px;
+                font-weight: $semiBold;
+                transition: all 1s linear;
+                &:hover{
+                    color: $bg-size-btn;
+                    background-color: $bg-dark;
+                }
+            }
+        }
+        .price{
+            color: $link-color;
+            font-weight: $semiBold;
+            font-size: $large;
+
+        }
+
+        .product-number{
+            display: flex;
+            text-align: center;
+            .add-btn, .sub-btn {
+                width: 50px;
+                height: 50px;
+                background: linear-gradient(90deg, rgba(97,129,243,1) 100%, rgba(124,151,245,1) 100%);
+                font-size: $large;
+                color: $light-text-color;
+                border: none;
+                transition: all 0.1s;
+                &:hover{
+                    font-size: 32px;
+                }
+            }
+            .quantity{
+                width: 50px;
+                height: 50px;
+                margin: 0;
+                font-size: $large;
+                font-weight: $regular;
+                line-height: 50px;
+            }
+        }
+        .adding-btn{
+            margin-top: 7px;
+            width: 175px;
+            height: 64px;
+            color: $light-text-color;
+            text-align: center;
+            font-size: $medium;
+            font-weight: $mediumW;
+            border: none;
+            background: linear-gradient(90deg, rgba(208,23,238,1) 0%, rgba(62,32,248,0.9) 100%);
+            transition: all 0.1s linear;
+            &:hover{
+                font-weight: $semiBold;
+            }
+        }
+    }
+}
+
+.product-product{
+    padding-top: 40px;
+    background-color: #FFFCFC;
+   
+}

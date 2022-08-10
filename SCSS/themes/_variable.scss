@@ -1,0 +1,47 @@
+// color
+$bg-dark: black;
+$bg-card-light: #F8F8F8;
+$bg-price: #DEDDDC;
+$bg-btn: #E1B067;
+$bg-size-btn: #CCCCCC;
+$link-color: red;
+
+
+// text color
+$light-text-color: white;
+$dark-text-color: black;
+$gray-text-color: #0f0d0d;
+$green-text-color: #1ED90E;
+$sub-title-color: #CBC9C9;
+
+// border color
+$form-border-color: #AE18E2;
+
+// font weight
+$thin :100;
+$light :300;
+$regular :400;
+$mediumW: 500;
+$semiBold :600;
+$bold :900;
+
+// Font size
+
+$xsmall: 18px;
+$small: 20px;
+$medium: 24px;
+$large: 29px;
+$midlarge: 40px;
+$xlarge: 48px;
+
+
+@mixin text($text-color: $light-text-color, $font-w:$regular, $font-s: $medium){
+    padding: 10px 0;
+    color: $text-color;
+    font-weight: $font-w;
+    font-size: $font-s;
+}
+
+
+
+

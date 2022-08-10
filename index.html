@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <!-- FontAwesome 6.1.1 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- (Optional) Use CSS or JS implementation -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+      integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Montserrat font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="navbar-header">
+        <div class="container">
+
+        <div class="row">
+          <div class="col">
+            <a class="logo-brand" href="#">
+              <img class="img-logo" src="./Images/image 3.png" alt="logo" />
+            </a>
+          </div>
+          <div class="col">
+            <div class="header-items">
+              <div class="shopping-cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p id="cart-number" class="cart-number">1</p>
+              </div>
+              <a href="#">
+                <i class="fa-solid fa-user"></i> <span>Login</span>
+              </a>
+              <a href="./views/register.html"> <span>Register</span> </a>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="menu-bar">
+        <div class="container">
+          <div class="row">
+            <div class="menu-items">
+              <a href="#" class="menu-item active">Home </a>
+              <a href="#" class="menu-item">Man </a>
+              <a href="#" class="menu-item">Women </a>
+              <a href="#" class="menu-item">Kid </a>
+              <a href="#" class="menu-item">Sport </a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </header>
+
+    <section class="landingpage">
+      <div class="container">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="content row">
+                <div class="main-img col-7">
+                  <img src="./Images/image 4.png" alt="" />
+                </div>
+                <div class="description col-5">
+                  <h3 class="title">Nike Mercurial Superfly</h3>
+                  <p class="subtitle">Find the right boost to suit your game</p>
+                  <a class="btn btn-primary">Buy now</a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="content row">
+                <div class="main-img col-7">
+                  <img src="./Images/image 4.png" alt="" />
+                </div>
+                <div class="description col-5">
+                  <h3 class="title">Nike Mercurial Superfly</h3>
+                  <p class="subtitle">Find the right boost to suit your game</p>
+                  <a class="btn btn-primary">Buy now</a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="content row">
+                <div class="main-img col-7">
+                  <img src="./Images/image 4.png" alt="" />
+                </div>
+                <div class="description col-5">
+                  <h3 class="title">Nike Mercurial Superfly</h3>
+                  <p class="subtitle">Find the right boost to suit your game</p>
+                  <a class="btn btn-primary">Buy now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-feature">
+      <div class="container">
+        <div class="row">
+          <div class="feature-header">
+            <h2>- Product Feature -</h2>
+          </div>
+          <div class="feature-body row">
+            <div class="product-card col-4">
+              <div class="card-body">
+                <img
+                  src="https://shop.cyberlearn.vn/images/adidas-prophere.png"
+                  alt=""
+                />
+                <div class="titles">
+                  <h3 class="product-title">Adidas Propheres</h3>
+                  <p class="product-description">Short Des</p>
+                </div>
+              </div>
+              <div class="card-actions">
+                <a class="btn-buy" href="./views/detail.html?productid=1">Buy</a> Now</a>
+                <p class="price-text">Price</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="top-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-4">
+              <div class="item-info">
+                <h2 class="item-header">Product Info</h2>
+                <a href="#" class="item-link">Contact-us</a>
+                <a href="#" class="item-link">Shoping</a>
+                <a href="#" class="item-link">NIKEID</a>
+                <a href="#" class="item-link">Nike+</a>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="item-info border-left">
+                <h2 class="item-header">Orders</h2>
+                <a href="#" class="item-link">Payment options</a>
+                <a href="#" class="item-link">Shipping and delivery</a>
+                <a href="#" class="item-link">Returns</a>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="item-info border-left">
+                <h2 class="item-header">Register</h2>
+                <p href="#" class="item-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <a href="#" class="item-link item-red-link">Learn more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-4">
+              <div class="item-info">
+                <h2 class='item-header'>EMAIL SIGN UP</h2>
+                <p class="bottom-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <a href="#" class="item-link item-red-link">Sign up now</a>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="item-info">
+                <h2 class='item-header'>GIFT CARDS</h2>
+                <p class="bottom-description">Lorem ipsum dolor sit.</p>
+                <a href="#" class="item-link item-red-link">View card</a>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="item-info">
+                <h2 class='item-header'>STOREs NEAR YOU</h2>
+                <p class="bottom-description">
+                  Locate a Nike real store or authorized retailer
+                </p>
+                <a href="#" class="item-link  item-red-link">Search</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="./controllers/index.js"></script>
+  </body>
+</html>

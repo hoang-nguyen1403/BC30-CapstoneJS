@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>Register new Account</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- Bootstrap CSS v5.2.0-beta1 -->
     <link
       rel="stylesheet"
@@ -16,28 +22,208 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/register.css" />
   </head>
   <body>
     <header class="header">
-
+      <div class="navbar-header">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <a class="logo-brand" href="../index.html">
+                <img class="img-logo" src="../Images/image 3.png" alt="logo" />
+              </a>
+            </div>
+            <div class="col">
+              <div class="header-items">
+                <div class="shopping-cart">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <p id="cart-number" class="cart-number">1</p>
+                </div>
+                <a href="#">
+                  <i class="fa-solid fa-user"></i> <span>Login</span>
+                </a>
+                <a href="./register.html"> <span>Register</span> </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-bar">
+        <div class="container">
+          <div class="row">
+            <div class="menu-items">
+              <a href="#" class="menu-item active">Home </a>
+              <a href="#" class="menu-item">Man </a>
+              <a href="#" class="menu-item">Women </a>
+              <a href="#" class="menu-item">Kid </a>
+              <a href="#" class="menu-item">Sport </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
 
-    <section class="memu-bar"></section>
+    <div class="register container">
+      <div class="header">Register</div>
+      <form id="register-form">
+        <div class="form-group row">
+          <div class="col-6 left-form">
+            <div class="row form-item">
+              <label for="staticEmail" class="col-sm-2 col-form-label"
+                >Email</label
+              >
+              <div class="col-sm-9">
+                <input
+                  type="text"
+                  class="form-control-plaintext"
+                  id="email"
+                  value="email@example.com"
+                />
+              </div>
+              <label class ="col-sm-1 mandatory" for="">(*)</label>
+            </div>
+            <div class="row form-item">
+              <label for="passwords" class="col-sm-5 col-form-label"
+                >Password</label
+              >
+              <div class="col-sm-6">
+                <input
+                  type="password"
+                  class="form-control-plaintext"
+                  id="password"
+                  placeholder="********"
+                />
+              </div>
+              <label class ="col-sm-1 mandatory" for="">(*)</label>
+            </div>
 
-    <section class="carousel">
+            <div class="row form-item">
+              <label for="passwords" class="col-sm-5 col-form-label"
+                >Password confirm</label
+              >
 
-    </section>
-
-    <section class="product-feature">
-
-    </section>
+              <div class="col-sm-6">
+                <input
+                  type="password"
+                  class="form-control-plaintext"
+                  id="confirmedPassword"
+                  placeholder="********"
+                />
+              </div>
+              <label class ="col-sm-1 mandatory" for="">(*)</label>
+            </div>
+          </div>
+          <div class="col-6 right-form">
+            <div class="row form-item">
+              <label for="staticEmail" class="col-sm-2 col-form-label"
+                >Name</label
+              >
+              <div class="col-sm-9">
+                <input
+                  type="text"
+                  class="form-control-plaintext"
+                  id="name"
+                  placeholder="name"
+                />
+              </div>
+              <label class ="col-sm-1 mandatory" for="">(*)</label>
+            </div>
+            <div class="row form-item">
+              <label class="col-sm-2 col-form-label">Phone</label>
+              <div class="col-sm-9">
+                <input
+                  type="text"
+                  class="form-control-plaintext"
+                  id="phone"
+                  placeholder="phone"
+                />
+              </div>
+              <label class ="col-sm-1 mandatory" for="">(*)</label>
+            </div>
+            <div class="form-item gender">
+              <label class="male-selection">Gender</label>
+              <div class="male-selection">
+                <input type="radio" name="gender" id="male" value="Male" />
+                <label for="">Male</label>
+              </div>
+              <div class="male-selection">
+                <input type="radio" name="gender" id="female" value="Female" />
+                <label class="form-check-label" for="">Female</label>
+              </div>
+            </div>
+            <button class="btn-submit" type="submit">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
 
     <footer class="footer">
-        
+      <div class="top-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-4">
+              <div class="item-info">
+                <h2 class="item-header">Product Info</h2>
+                <a href="#" class="item-link">Contact-us</a>
+                <a href="#" class="item-link">Shoping</a>
+                <a href="#" class="item-link">NIKEID</a>
+                <a href="#" class="item-link">Nike+</a>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="item-info border-left">
+                <h2 class="item-header">Orders</h2>
+                <a href="#" class="item-link">Payment options</a>
+                <a href="#" class="item-link">Shipping and delivery</a>
+                <a href="#" class="item-link">Returns</a>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="item-info border-left">
+                <h2 class="item-header">Register</h2>
+                <p href="#" class="item-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <a href="#" class="item-link item-red-link">Learn more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-4">
+              <div class="item-info">
+                <h2 class="item-header">EMAIL SIGN UP</h2>
+                <p class="bottom-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <a href="#" class="item-link item-red-link">Sign up now</a>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="item-info">
+                <h2 class="item-header">GIFT CARDS</h2>
+                <p class="bottom-description">Lorem ipsum dolor sit.</p>
+                <a href="#" class="item-link item-red-link">View card</a>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="item-info">
+                <h2 class="item-header">STOREs NEAR YOU</h2>
+                <p class="bottom-description">
+                  Locate a Nike real store or authorized retailer
+                </p>
+                <a href="#" class="item-link item-red-link">Search</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
-
-
-    <!-- Bootstrap JavaScript Libraries -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
       integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"

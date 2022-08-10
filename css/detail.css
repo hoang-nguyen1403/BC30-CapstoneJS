@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.row {
+  padding: 0;
+  margin: 0;
+}
+
+.col {
+  padding: 0;
+}
+
+.detail-product {
+  margin-top: 20px;
+}
+
+.detail-product .left-side {
+  padding-left: 40px;
+  overflow: hidden;
+}
+
+.detail-product .left-side .product-illustration {
+  overflow: hidden;
+  background-color: #F8F8F8;
+}
+
+.detail-product .left-side .product-illustration .detail-product {
+  width: 100%;
+  padding: 90px 90px 90px 90px;
+  transition: all 1s ease;
+}
+
+.detail-product .left-side .product-illustration .detail-product:hover {
+  transform: scale(1.4);
+}
+
+.detail-product .right-side {
+  margin-top: 20px;
+  margin-left: 60px;
+}
+
+.detail-product .right-side .product-name {
+  padding: 10px 0;
+  color: black;
+  font-weight: 600;
+  font-size: 29px;
+}
+
+.detail-product .right-side .des-size {
+  padding: 10px 0;
+  color: #1ED90E;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.detail-product .right-side .sizes {
+  display: flex;
+}
+
+.detail-product .right-side .sizes p {
+  width: 50px;
+  height: 50px;
+  background-color: #CCCCCC;
+  margin-right: 20px;
+  text-align: center;
+  line-height: 50px;
+  font-weight: 600;
+  transition: all 1s linear;
+}
+
+.detail-product .right-side .sizes p:hover {
+  color: #CCCCCC;
+  background-color: black;
+}
+
+.detail-product .right-side .price {
+  color: red;
+  font-weight: 600;
+  font-size: 29px;
+}
+
+.detail-product .right-side .product-number {
+  display: flex;
+  text-align: center;
+}
+
+.detail-product .right-side .product-number .add-btn, .detail-product .right-side .product-number .sub-btn {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(90deg, #6181f3 100%, #7c97f5 100%);
+  font-size: 29px;
+  color: white;
+  border: none;
+  transition: all 0.1s;
+}
+
+.detail-product .right-side .product-number .add-btn:hover, .detail-product .right-side .product-number .sub-btn:hover {
+  font-size: 32px;
+}
+
+.detail-product .right-side .product-number .quantity {
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  font-size: 29px;
+  font-weight: 400;
+  line-height: 50px;
+}
+
+.detail-product .right-side .adding-btn {
+  margin-top: 7px;
+  width: 175px;
+  height: 64px;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  border: none;
+  background: linear-gradient(90deg, #d017ee 0%, rgba(62, 32, 248, 0.9) 100%);
+  transition: all 0.1s linear;
+}
+
+.detail-product .right-side .adding-btn:hover {
+  font-weight: 600;
+}
+
+.product-product {
+  padding-top: 40px;
+  background-color: #FFFCFC;
+}
