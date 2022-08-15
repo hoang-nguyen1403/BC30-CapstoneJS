@@ -1,4 +1,4 @@
-export class Product {
+class Product {
     id = 0;
     name = "";
     alias = "";
@@ -22,3 +22,14 @@ export class Product {
     }
 
 }
+
+class User {
+    email= "";
+    name= "";
+    phone= "";
+    password= "";
+    gender= false;
+   
+}
+
+export {Product, User}

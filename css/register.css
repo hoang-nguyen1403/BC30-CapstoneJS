@@ -36,31 +36,56 @@
   padding-bottom: 50px;
 }
 
+.register .loading {
+  display: none;
+}
+
+.register .loading #homePage {
+  display: none;
+  text-decoration: none;
+  color: "green";
+}
+
 .register .mandatory {
   color: red;
 }
 
-.register #register-form {
+.register #registerForm {
   font-size: 29px;
 }
 
-.register #register-form .form-item {
+.register #registerForm .form-item {
   padding: 10px 0;
   border-bottom: 5px solid #AE18E2;
 }
 
-.register #register-form .right-form .gender {
-  display: flex;
-  flex-direction: row;
-  padding: 10px 0;
+.register #registerForm .form-item input {
+  height: 100%;
+  font-size: 20px;
+  border: none;
+  width: 100%;
 }
 
-.register #register-form .right-form .gender .male-selection {
+.register #registerForm .form-item input:-internal-autofill-selected {
+  background-color: transparent;
+}
+
+.register #registerForm .form-item .warning {
+  display: none;
+  font-size: 16px;
+}
+
+.register #registerForm .right-form .gender {
+  display: flex;
+  flex-direction: row;
+}
+
+.register #registerForm .right-form .gender .male-selection {
   padding: 7px 0;
   padding-left: 20px;
 }
 
-.register #register-form .right-form .gender .male-selection input {
+.register #registerForm .right-form .gender .male-selection input {
   font-size: 50px;
   height: 20px;
   width: 20px;
@@ -68,7 +93,7 @@
   border-color: 1px solid #AE18E2 !important;
 }
 
-.register #register-form .right-form .btn-submit {
+.register #registerForm .right-form .btn-submit {
   margin-top: 80px;
   width: 290px;
   height: 50px;
